@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adithya Prasad G</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a9c7e54208.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="heading"><span style="color:green;">A</span>DITHYA <span style="color:green;">P</span>RASAD
+                </h1>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Hey All</p>
+                <h1>I am <span style="color:green;">Adithya</span><br>Student, VIT Chennai</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/bobby.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Passionate CSE Student from VIT Chennai, adept in C, C++, SQL, Python, and Java. Currently
+                        immersed in Web Development, driven by a desire to leave a mark in the tech industry. Possessing
+                        strong problem-solving skills, I excel in navigating challenging environments. Continuously
+                        staying abreast of industry trends, I actively explore new programming languages, frameworks,
+                        and tools to broaden my expertise.
+
+                        My project experience, both individual and collaborative, has refined my communication and
+                        collaboration abilities, fostering effective teamwork.</p>
+
+                    <div class="tab-tiles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Structures and Algorithm</span><br>Real Time Application-DSA</li>
+                            <li><span>Web Development</span><br>Web Application Development</li>
+                            <li><span>BADMINTON</span><br>Two Time District Level WINNER</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Vellore Institute of Technology</span><br>Bachelor of Technology - BTech, Computer
+                                Science<br><span style="color:palevioletred">Sep 2022 - Jul 2026<br>CGPA : 8.58</span></li>
+                            <li><span>DAV school</span><br>+1 and +2, PCM with Cs<br><span
+                                    style="color:palevioletred">Aug 2020 - Jun 2022<br>Grade : 88%</span></li>
+                            <li><span>DAV school</span><br>10th Standard, Schooling<br><span
+                                    style="color:palevioletred">Jul 2020<br>Grade : 95%</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certifications">
+                        <ul>
+                            <li><span>Death Clock Hackathon</span><br>GDSC WoW<br><span style="color:palevioletred">Issued
+                                    Apr 2023</span></li>
+                            <li><span>Certificate for the Completion of C Training</span><br>Spoken Tutorial<br><span
+                                    style="color:palevioletred">Issued Apr 2023</span></li>
+                            <li><span>Certificate for the Completion of Python 3.4.3 Training</span><br>Spoken
+                                Tutorial<br><span style="color:palevioletred">Issued Apr 2023</span></li>
+                            <li><span>Certificate for the Completion of Data Structure & Algorithm course(Abdul Bari) - UDEMY</span><br><span style="color:palevioletred">Issued Nov 2023</span></li>    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>adithyaviews@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+91 9445094518</p>
+                    <div class="social-icons">
+                        
+                        <a href="https://www.instagram.com/realaadithya/"><i class="fab fa-instagram"></i></a>
+                        
+                        <a href="https://github.com/adi334"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Adithya Prasad</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+
+</html>
